@@ -1,0 +1,117 @@
+body {
+    padding: 0;
+    width: 98vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  
+  #game-intro {
+    padding: 20px 0px;
+  }
+  
+  #game-container {
+    display: flex;
+    width: 98vw;
+    padding: 20px 0px;
+    justify-content: center;
+  }
+  
+  #game-screen {
+    display: none;
+    padding-top: 20px 0px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+  }
+  
+  #game-end {
+    display: none;
+  }
+  
+  .game-intro p {
+    font-size: 18px;
+    font-family: "Verdana";
+  }
+  
+  .keyboard-img {
+    width: 150px;
+  }
+  
+  body button {
+    font-size: 30px;
+    background-color: #4f8fe1;
+    color: #fff;
+    padding: 20px 40px;
+    border: 0;
+    box-shadow: 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  .ball {
+    background-image: url("../images/ball.png");
+    position: absolute;
+  }
+
+  #health-board {
+    display: flex;
+    height: 94px;
+    margin-left: 15px;
+    margin-left: 15px;
+    justify-content: center;
+    flex-direction: column;    
+    border: 3px solid black;
+    border-radius: 5px;
+
+    }
+
+  #victory {
+    display: none;
+  }
+
+  #rules {
+    display: flex;
+    width: 40vw;
+    margin: 0;
+    padding-left: 30vw;
+    text-align: flex-start;
+
+  }
+
+  #my-health-background {
+    background-color: #4CAE50;
+    color: white;
+    box-shadow: 0;
+    padding: 10px 20px;
+    margin: 0;
+
+  }
+
+  #enemy-health-background {
+    background-color: #F24437;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0;
+    margin: 0;
+  }
+
+#my-health {
+background-color: white;
+color: black;
+font-size: 23px;
+padding: 2px;
+border: 1px solid black;
+border-radius: 5px;
+}
+
+#enemy-health {
+  background-color: white;
+  color: black;
+  padding: 2px;
+  border: 1px solid black;
+  font-size: 23px;
+  border-radius: 5px;
+}

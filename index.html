@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <audio id="health-music" src="./sounds/health.mp3"></audio>
+    <audio id="win-music" src="./sounds/win-music.mp3"></audio>
+    <audio id="lose-music" src="./sounds/lose-music.mp3"></audio>
+    <audio id="shoot-music" src="./sounds/shoot.mp3"></audio>
+    <title>Cannon battle</title>
+  </head>
+  <body>
+    <main>
+      <!-- #game-intro is initially shown on the game start screen -->
+      <div id="game-intro">
+        <img src="./images/giphy.gif" width="400px" class="logo-img" />
+        <br />
+        <h1>Cannon battle!</h1>
+        <button id="start-button">Start Game</button>
+        <p>Use the left and right arrow to control the cannon!</p>
+        <img src="./images/keyboard.png" alt="" class="keyboard-img" />
+        <p id="rules">Rules: every ball that reaches the opposite side of the field takes 1 health point from the player on that side. Fisrt aid kits add 1 health point to the player who picked it up. Aims remove 1 health point from the opposite player! Yoy can defend yourself shooting back enemy's attacks. First aid kits and aims are keys to victory! Good luck!</p>
+      </div>
+
+      <div id="game-container">
+        <div id="health-board">
+          <p id="my-health-background">Your health: <span id="my-health">50</span> points</p>
+          <p id="enemy-health-background">Enemy's health: <span id="enemy-health">50</span> points</p>
+        </div>
+        <!-- #game-screen is initially hidden using CSS style display: none -->
+        <div id="game-screen">
+          <audio
+          id="background-music"
+          src="./sounds/background-music.mp3"
+          loop>
+        </audio></div>
+      </div>
+
+      <div id="game-end">
+        <img src="./images/game-over.jpg" width="500px" class="logo-img" />
+        <h1>Game Over!</h1>
+        <br />
+        <button id="restart-button-lose">Restart</button>
+      </div>
+
+      <div id="victory">
+        <img src="./images/victory.png" height="550px" class="logo-img" />
+        <h1>You won!</h1>
+        <br />
+        <button id="restart-button-win">Restart</button>
+      </div>
+
+    </main>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
