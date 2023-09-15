@@ -87,8 +87,8 @@ class Game {
       this.explosionArr = [];
       this.cannonFireArr = [];
       this.counter = 0;
-      this.myHealth = 50;
-      this.enemyHealth = 50;
+      this.myHealth = 10;
+      this.enemyHealth = 10;
       this.gameIsOver = false;
       this.myHealthElement = document.getElementById('my-health');
       this.enemyHealthElement = document.getElementById('enemy-health');
